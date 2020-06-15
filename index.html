@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Modal</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="centralized-container">
+        <button onclick="toggleModal()">Open Modal</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="Modal" hidden>
+        <header>
+            <section class="icon-section"></section>
+            <section class="center-section"></section>
+            <section class="buttons-section">
+                <button onclick="toggleModal()" id="Close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+            </section>
+        </header>
+        <main> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dolor ad ipsa dicta eveniet aspernatur amet? Dicta, omnis quidem sed quo ratione exercitationem facere tempore mollitia consequatur magni reprehenderit repudiandae. </main>
+        <footer></footer>
+    </div>
+    <!-- Modal -->
+</body>
+</html>

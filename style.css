@@ -1,0 +1,67 @@
+html ,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.centralized-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+#Modal {
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    z-index: 1000;
+
+    width: 90%;
+    max-width: 400px;
+    border-radius: 7px;
+    overflow: hidden;
+
+    background-color: #333;
+    color: #fff;
+}
+#Modal header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "icon center buttons";
+    background-color: #222;
+}
+#Modal header section.icon-section {
+    grid-area: icon;
+}
+#Modal header section.center-section {
+    grid-area: center;
+}
+#Modal header section.buttons-section {
+    grid-area: buttons;
+}
+#Modal header section.buttons-section button#Close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    min-width: 30px;
+    min-height: 30px;
+
+    background-color: transparent;
+    border: 0;
+}
+#Modal header section.buttons-section button#Close svg{
+    color: white;
+}
+#Modal header section.buttons-section button#Close:Hover{
+    background-color: #fff2;
+}
+#Modal header section.buttons-section button#Close:hover svg{
+    color: orangered;
+}
+#Modal main {
+    padding: 10px;
+}
